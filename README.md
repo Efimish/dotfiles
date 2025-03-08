@@ -1,29 +1,55 @@
-# Dotfiles
+# Dotfiles 🔧
+
+## Installing
+
+### Install [Chezmoi](https://chezmoi.io/)
+
+```bash
+brew install chezmoi
+winget install twpayne.chezmoi
+pacman -S chezmoi
+sudo snap install chezmoi --classic 
+```
+
+### Pull dotfiles
+
+```bash
+chezmoi init Efimish
+```
 
 ## Commands
 
 ```bash
-# Install chezmoi on a new machine
-chezmoi init Efimish/dotfiles
+# Start tracking file
+chezmoi add $FILE
 
-# Get into chezmoi directory
-# Default location: ~/.local/share/chezmoi
+# Get into chezmoi directory (~/.local/share/chezmoi)
 chezmoi cd
 
-# Push and pull changes
+# View changes before applying
+chezmoi diff
+
+# Apply changes
+chezmoi apply
+
+# Push and pull changes - use git
 git push
 git pull
-
-# Pull and apply changes
-chezmoi update
 ```
 
-## MacOS
+## MacOS apps 💻
+
+My dotfiles include `Brewfile` for installing all MacOS applications seamlessly
 
 ```bash
+# install
 brew bundle
+# save current
+brew bundle dump --describe
 ```
 
-## Zsh files execution order
+## Other
+
+### Zsh files execution order
 
 `.zshenv` → [`.zprofile` if login] → [`.zshrc` if interactive] → [`.zlogin` if login] → [`.zlogout` sometimes].
