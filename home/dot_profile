@@ -1,12 +1,12 @@
 # Homebrew
 if [ -f "/opt/homebrew/bin/brew" ]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 export HOMEBREW_NO_ANALYTICS=1
 
 # Cargo (Rust)
 if [ -f "$HOME/.cargo/env" ]; then
-    source "$HOME/.cargo/env"
+  source "$HOME/.cargo/env"
 fi
 
 # Default editor
