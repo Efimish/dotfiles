@@ -47,11 +47,10 @@ winget install Helix.Helix
 ## Raspberry Pi 🥧
 
 ```bash
-sh <(curl -L https://nixos.org/nix/install) --daemon
-nix-env -i chezmoi
-nix-env -i fish
-nix-env -i helix
-nix-env -i zellij
+sh <(curl -L https://nixos.org/nix/install)
+nix-env -p chezmoi
+cd raspberry_pi
+nix profile install
 ```
 
 ## Other
