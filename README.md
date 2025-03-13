@@ -47,8 +47,8 @@ winget install Helix.Helix
 ## Raspberry Pi 🥧
 
 ```bash
-sh <(curl -L https://nixos.org/nix/install)
-nix-env -p chezmoi
+sh <(curl -L https://nixos.org/nix/install) --daemon
+nix-shell -p chezmoi --run "chezmoi init --apply Efimish"
 cd raspberry_pi
 nix profile install
 ```
