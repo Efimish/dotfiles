@@ -40,16 +40,22 @@ brew bundle dump --describe
 ## Windows 🪟
 
 ```ps1
-winget install twpayne.chezmoi
-winget install Helix.Helix
+# install chezmoi
+winget install --id=twpayne.chezmoi -e
+# install everything from packages.json
+winget import -i packages.json
+# save packages.json
+winget export -o packages.json
 ```
 
 ## Raspberry Pi 🥧
 
 ```bash
+# install nix
 sh <(curl -L https://nixos.org/nix/install) --daemon
+# temporarily install chezmoi
 nix-shell -p chezmoi --run "chezmoi init --apply Efimish"
-cd raspberry_pi
+# install everything from flake.nix
 nix profile install
 ```
 
