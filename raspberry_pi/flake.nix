@@ -2,21 +2,36 @@
   description = "Raspberry Pi Nix Flake for installing packages";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs }:
+  outputs = inputs@{ self, nixpkgs, home-manager }:
   let
     system = "aarch64-linux";
     pkgs = import nixpkgs { inherit system; };
   in {
-    packages.${system}.default = pkgs.buildEnv {
-      name = "my packages";
-      paths = with pkgs; [
-        chezmoi
-        fish
-        helix
-        zellij
+    homeConfigurations.efim = home-manager.lib.homeManagerConfiguration {
+      inherit pkgs;
+
+      modules = [
+        {
+          home.username = "efim";
+          home.homeDirectory = "/home/efim";
+
+          home.packages = with pkgs; [
+            git
+            chezmoi
+            fish
+            helix
+            zellij
+          ];
+
+          home.stateVersion = "24.11";
+
+          programs.fish.enable = true;
+        }
       ];
     };
   };

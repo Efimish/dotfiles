@@ -48,6 +48,17 @@ winget import -i packages.json
 winget export -o packages.json
 ```
 
+## Linux 🐧
+
+```bash
+# install nix
+sh <(curl -L https://nixos.org/nix/install) --daemon
+# temporarily install chezmoi
+nix-shell -p chezmoi --run "chezmoi init --apply Efimish"
+# install everything from flake.nix
+nix-shell -p home-manager --run "home-manager switch --flake ."
+```
+
 ## Raspberry Pi 🥧
 
 ```bash
@@ -56,10 +67,12 @@ sh <(curl -L https://nixos.org/nix/install) --daemon
 # temporarily install chezmoi
 nix-shell -p chezmoi --run "chezmoi init --apply Efimish"
 # install everything from flake.nix
-nix profile install
+nix-shell -p home-manager --run "home-manager switch --flake ."
 ```
 
 ## Other
+
+TODO: make nix configuration cross-platform
 
 ### Zsh files execution order
 
