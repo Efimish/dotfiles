@@ -28,6 +28,8 @@
             zellij
           ];
 
+          home.stateVersion = "24.11";
+
           programs.fish.enable = true;
         }
       ];
