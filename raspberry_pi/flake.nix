@@ -26,10 +26,16 @@
             fish
             helix
             zellij
+            lazygit
+            caddy
+            bun
+            rustup
+            uv
           ];
 
           home.stateVersion = "24.11";
 
+          programs.home-manager.enable = true;
           programs.fish.enable = true;
         }
       ];
