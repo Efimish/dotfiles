@@ -28,6 +28,7 @@
             zellij
             lazygit
             caddy
+            podman
             bun
             rustup
             uv
