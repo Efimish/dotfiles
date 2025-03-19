@@ -1,45 +1,24 @@
 {
-  description = "Linux Nix Flake for installing packages";
+  description = "Efim's nix home-manager configuration";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager }:
-  let
-    system = "x86_64-linux";
-    pkgs = import nixpkgs { inherit system; };
-  in {
-    homeConfigurations.efim = home-manager.lib.homeManagerConfiguration {
-      inherit pkgs;
+  {
+    homeConfigurations.efim-arm = home-manager.lib.homeManagerConfiguration {
+      pkgs = import nixpkgs { system = "aarch64-linux"; };
+      modules = [ ./home.nix ];
+    };
 
-      modules = [
-        {
-          home.username = "efim";
-          home.homeDirectory = "/home/efim";
-
-          home.packages = with pkgs; [
-            git
-            chezmoi
-            fish
-            helix
-            zellij
-            lazygit
-            caddy
-            podman
-            bun
-            rustup
-            uv
-          ];
-
-          home.stateVersion = "24.11";
-
-          programs.home-manager.enable = true;
-          programs.fish.enable = true;
-        }
-      ];
+    homeConfigurations.efim-x86 = home-manager.lib.homeManagerConfiguration {
+      pkgs = import nixpkgs { system = "x86_64-linux"; };
+      modules = [ ./home.nix ];
     };
   };
 }
