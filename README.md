@@ -28,7 +28,7 @@ git pull
 
 ## MacOS 💻
 
-```bash
+```sh
 # install brew
 /bin/bash <(curl -L https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 # install chezmoi
@@ -41,18 +41,18 @@ brew bundle dump --describe
 
 ## Windows 🪟
 
-```ps1
+```sh
 # install chezmoi
 winget install --id=twpayne.chezmoi -e
 # install everything from packages.json
-winget import -i packages.json
+winget import -i packages.json --no-upgrade
 # save packages.json
 winget export -o packages.json
 ```
 
 ## Linux 🐧
 
-```bash
+```sh
 # install nix
 sh <(curl -L https://nixos.org/nix/install) --daemon
 # temporarily install chezmoi
