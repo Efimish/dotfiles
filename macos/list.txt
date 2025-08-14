@@ -1,0 +1,90 @@
+Alacritty
+AltTab
+AmneziaWG
+Audacity
+BetterDisplay
+Bitwarden
+Brave Browser
+Caffeine
+Chromium
+CleanMyMac X
+Cyberduck
+DBeaver
+Discord
+Docker
+Figma
+Firefox
+GIMP
+GarageBand
+Ghostty
+Hiddify
+IINA
+Inkscape
+Insomnia
+Jazz
+Keka
+Keychron Engine
+Keynote
+LabyMod Launcher
+Lunar Client
+Mac Mouse Fix
+Microsoft Excel
+Microsoft PowerPoint
+Microsoft Word
+Minecraft
+MultiMC
+NetNewsWire
+Numbers
+Obsidian
+OnyX
+OpenVPN Connect
+OpenVPN Connect
+Outline
+Pages
+Parallels Desktop Activation Tool
+Parallels Desktop
+PlayCover
+Podman Desktop
+Prism Launcher
+Raspberry Pi Imager
+Raycast
+Rectangle
+RustDesk
+SFM
+Safari
+Sideloadly
+Slack
+SoulseekQt
+Spotify
+Steam
+TablePlus
+Telegram
+TigerVNC Viewer 1.15.0
+Tor Browser
+Transmission
+Tunnelblick
+UTM
+Userscripts
+Utilities
+Visual Studio Code
+Visual Studio
+Wacom Tablet.localized
+WezTerm
+Whisky
+WireGuard
+Wireshark
+Xcode
+YouTube Music
+Zen Browser
+ZeroTier
+blobsaver
+calibre
+coconutBattery
+iMazing
+iMovie
+iTerm
+osu!
+pgAdmin 4
+user
+v2RayTun
+zoom.us
