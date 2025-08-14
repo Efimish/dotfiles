@@ -4,8 +4,6 @@ tap "homebrew/services"
 tap "koekeishiya/formulae"
 tap "oven-sh/bun"
 tap "th-ch/youtube-music"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Framework for layout and rendering of i18n text
@@ -16,6 +14,10 @@ brew "librsvg"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Platform built on V8 to build network applications
 brew "node"
 # Secure and free password manager for all of your devices
@@ -46,8 +48,6 @@ brew "docker", link: false
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
 # Reliable Internet Stream Transport (RIST)
@@ -62,6 +62,8 @@ brew "fish"
 brew "fzf"
 # GNU compiler collection
 brew "gcc"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Graph visualization software from AT&T and Bell Labs
@@ -105,7 +107,9 @@ brew "nushell"
 # Pluggable transport proxy for Tor, implementing obfs4
 brew "obfs4proxy"
 # Create, run, and share large language models (LLMs)
-brew "ollama", restart_service: :changed
+brew "ollama"
+# Open client for Cisco AnyConnect VPN
+brew "openconnect"
 # Development kit for the Java programming language
 brew "openjdk"
 # Development kit for the Java programming language
@@ -118,12 +122,18 @@ brew "openvpn"
 brew "pipes-sh"
 # Hook preloader
 brew "proxychains-ng"
+# Python interface to Tcl/Tk
+brew "python-tk@3.13"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # File browser
 brew "ranger"
+# Rsync for cloud storage
+brew "rclone"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Modern Day Portscanner
@@ -134,6 +144,8 @@ brew "spoofdpi"
 brew "sqlite-utils"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Scriptable music downloader for Qobuz, Tidal, SoundCloud, and Deezer
+brew "streamrip"
 # User interface to the TELNET protocol
 brew "telnet"
 # Terminal multiplexer
@@ -142,6 +154,8 @@ brew "tmux"
 brew "tor"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Pluggable terminal workspace, with terminal multiplexer as the base feature
@@ -156,10 +170,14 @@ cask "amneziavpn"
 cask "bitwarden"
 # E-books management software
 cask "calibre"
+# Server and cloud storage browser
+cask "cyberduck"
+# Voice and text chat software
+cask "discord"
 # App to build and share containerised applications and microservices
-cask "docker"
-# Google Chromium, sans integration with Google
-cask "eloston-chromium"
+cask "docker-desktop"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Open source API development ecosystem
 cask "hoppscotch"
 # Free and open-source media player
@@ -172,6 +190,8 @@ cask "keka"
 cask "netnewswire"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Verify system files structure, run miscellaneous maintenance and more
+cask "onyx"
 # Client program for the OpenVPN Access Server
 cask "openvpn-connect"
 # Administration and development platform for PostgreSQL
@@ -184,6 +204,8 @@ cask "raspberry-pi-imager"
 cask "raycast"
 # Open source virtual/remote desktop application
 cask "rustdesk"
+# Standalone client for sing-box, the universal proxy platform
+cask "sfm"
 # Team communication and collaboration software
 cask "slack"
 # Multi-platform VNC client and server
@@ -194,6 +216,8 @@ cask "tor-browser"
 cask "transmission"
 # Free and open-source OpenVPN client
 cask "tunnelblick"
+# Google Chromium, sans integration with Google
+cask "ungoogled-chromium"
 # Virtual machines UI using QEMU
 cask "utm"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
@@ -201,10 +225,71 @@ cask "wezterm"
 # Wine wrapper built with SwiftUI
 cask "whisky"
 # Network protocol analyzer
-cask "wireshark"
+cask "wireshark-app"
+# Web browser
+cask "yandex"
 # YouTube Music Desktop App
 cask "youtube-music"
 # Gecko based web browser
-cask "zen-browser"
+cask "zen"
 # Video communication and virtual meeting platform
 cask "zoom"
+vscode "13xforever.language-x86-64-assembly"
+vscode "astro-build.astro-vscode"
+vscode "bbenoist.nix"
+vscode "bierner.markdown-mermaid"
+vscode "catppuccin.catppuccin-vsc"
+vscode "catppuccin.catppuccin-vsc-icons"
+vscode "davidanson.vscode-markdownlint"
+vscode "dbaeumer.vscode-eslint"
+vscode "docker.docker"
+vscode "dracula-theme.theme-dracula"
+vscode "eamodio.gitlens"
+vscode "editorconfig.editorconfig"
+vscode "esbenp.prettier-vscode"
+vscode "fill-labs.dependi"
+vscode "formulahendry.code-runner"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "github.vscode-github-actions"
+vscode "golang.go"
+vscode "icrawl.discord-vscode"
+vscode "ionic.ionic"
+vscode "jebbs.plantuml"
+vscode "matthewpi.caddyfile-support"
+vscode "mechatroner.rainbow-csv"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-ceintl.vscode-language-pack-ru"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode.remote-explorer"
+vscode "ms-vscode.vscode-speech"
+vscode "ms-vscode.vscode-speech-language-pack-ru-ru"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "mtxr.sqltools"
+vscode "mtxr.sqltools-driver-pg"
+vscode "orta.vscode-jest"
+vscode "oven.bun-vscode"
+vscode "phind.phind"
+vscode "polymeilex.wgsl"
+vscode "pomdtr.excalidraw-editor"
+vscode "prisma.prisma"
+vscode "redhat.vscode-xml"
+vscode "ritwickdey.liveserver"
+vscode "rust-lang.rust-analyzer"
+vscode "svelte.svelte-vscode"
+vscode "tamasfe.even-better-toml"
+vscode "tauri-apps.tauri-vscode"
+vscode "unifiedjs.vscode-mdx"
+vscode "vadimcn.vscode-lldb"
+vscode "vscode-icons-team.vscode-icons"
+vscode "vscodevim.vim"
+vscode "vue.volar"
+vscode "wakatime.vscode-wakatime"
+vscode "william-voyek.vscode-nginx"
