@@ -1,0 +1,38 @@
+7zip
+amd software
+blobsaver
+bun
+caddy
+cheat engine
+chezmoi
+ungoogled chromium
+cpu-z
+discord
+gimp
+git
+gpg4win
+helix
+hydra
+java
+lazygit
+vs code
+vs
+firefox
+msi afterburner
+notepad++
+nu
+obs studio
+obsidian
+podman
+powershell
+powertoys
+prism launcher
+rustdesk
+rustup
+sharex
+spotify
+steam
+telegram
+transmission
+twinkle tray
+uv
