@@ -1,0 +1,7 @@
+[user]
+  name = Efim Ishenin
+  email = me@efima.ru
+[core]
+  editor = hx
+[init]
+	defaultBranch = main
