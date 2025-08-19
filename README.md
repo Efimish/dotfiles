@@ -7,10 +7,10 @@ For managing my dotfiles I use
 
 ```bash
 # Init chezmoi with my config
-chezmoi init Efimish
+chezmoi init Efimish [--ssh]
 
 # Init chezmoi and apply
-chezmoi init Efimish --apply
+chezmoi init Efimish [--ssh] --apply
 
 # Apply config
 chezmoi apply
