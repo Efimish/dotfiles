@@ -16,6 +16,6 @@ chezmoi init Efimish --apply
 # 4) Install everything from Brewfile
 brew bundle
 
-# 5) Later save package list to Brewfile
-brew bundle dump --describe
+# 5) Later save everything to Brewfile
+brew bundle dump
 ```
