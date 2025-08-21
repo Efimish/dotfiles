@@ -1,0 +1,2 @@
+# Simple prompt
+PS1='\e[34m\w \e[32m\$\e[0m '
