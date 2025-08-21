@@ -7,10 +7,7 @@ For managing my dotfiles I use
 
 ```bash
 # Init chezmoi with my config
-chezmoi init Efimish [--ssh]
-
-# Init chezmoi and apply
-chezmoi init Efimish [--ssh] --apply
+chezmoi init Efimish [--ssh] [--apply]
 
 # Apply config
 chezmoi apply
@@ -20,10 +17,6 @@ chezmoi add $FILE
 
 # Get into chezmoi directory (~/.local/share/chezmoi)
 chezmoi cd
-
-# Push and pull changes - use git
-git push
-git pull
 ```
 
 ## Zsh files execution order
