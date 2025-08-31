@@ -14,7 +14,8 @@ Guru3D.Afterburner
 CPUID.CPU-Z
 Discord.Discord
 Mozilla.Firefox
-GIMP.GIMP
+GIMP.GIMP.3
+CPUID.HWMonitor
 Notepad++.Notepad++
 Obsidian.Obsidian
 OBSProject.OBSStudio
