@@ -19,10 +19,13 @@ CPUID.HWMonitor
 Notepad++.Notepad++
 Obsidian.Obsidian
 OBSProject.OBSStudio
+Microsoft.Office
+Google.PlatformTools
 Microsoft.PowerShell
 Microsoft.PowerToys
 PrismLauncher.PrismLauncher
 RustDesk.RustDesk
+Rustlang.Rustup
 ShareX.ShareX
 Spotify.Spotify
 Valve.Steam
@@ -32,3 +35,4 @@ Transmission.Transmission
 xanderfrangos.twinkletray
 eloston.ungoogled-chromium
 Microsoft.VisualStudioCode
+Microsoft.WindowsTerminal
