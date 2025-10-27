@@ -1,14 +1,16 @@
 sharkdp.bat
 twpayne.chezmoi
-Gyan.FFmpeg
+yt-dlp.FFmpeg
 Git.Git
 Helix.Helix
 JesseDuffield.lazygit
 GNU.MidnightCommander
 Insecure.Nmap
 RedHat.Podman
+Typst.Typst
 astral-sh.uv
 Oven-sh.Bun
+yt-dlp.yt-dlp
 7zip.7zip
 Guru3D.Afterburner
 CPUID.CPU-Z
@@ -34,5 +36,6 @@ TorProject.TorBrowser
 Transmission.Transmission
 xanderfrangos.twinkletray
 eloston.ungoogled-chromium
+Oracle.VirtualBox
 Microsoft.VisualStudioCode
 Microsoft.WindowsTerminal
