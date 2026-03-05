@@ -17,5 +17,5 @@ chezmoi init Efimish --apply
 brew bundle
 
 # 5) Later save everything to Brewfile
-brew bundle dump
+brew bundle dump --describe
 ```
