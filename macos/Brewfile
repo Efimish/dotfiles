@@ -1,18 +1,56 @@
-tap "brewforge/extras"
-tap "krishkrosh/apps"
-tap "oven-sh/bun"
+tap "brewforge/extras", trusted: true
+tap "krishkrosh/apps", trusted: true
+tap "oven-sh/bun", trusted: true
+# Library to render SVG files using Cairo
+brew "librsvg"
+# GNU compiler collection
+brew "gcc"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Automation for Apps
+brew "appium"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Collection of portable C++ source libraries
+brew "boost"
 # Powerful, enterprise-ready, open source web server with automatic HTTPS
 brew "caddy"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
+# Cross-platform make
+brew "cmake"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# Portable file server
+brew "copyparty"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Small static webserver without CGI
+brew "darkhttpd"
+# Secure runtime for JavaScript and TypeScript
+brew "deno"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# Pack, ship and run any application as a lightweight container
+brew "docker", link: false
+# Isolated development environments using Docker
+brew "docker-compose"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# X11 implementation of the Remote Desktop Protocol (RDP)
+brew "freerdp"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
+# Quickly rewrite git repository history
+brew "git-filter-repo"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Post-modern modal text editor
 brew "helix"
 # Full-featured C++ implementation of I2P client
@@ -25,20 +63,50 @@ brew "links"
 brew "micro"
 # Terminal-based visual file manager
 brew "midnight-commander"
+# High performance static file server
+brew "miniserve"
+# Lightweight cloud messaging system
+brew "nats-server"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+brew "nginx"
+# Graphical client for the Soulseek peer-to-peer network
+brew "nicotine-plus"
+# Small build system for use with gyp or CMake
+brew "ninja"
 # Port scanning utility for large networks
 brew "nmap"
+# Create, run, and share large language models (LLMs)
+brew "ollama"
+# AI coding agent, built for the terminal
+brew "opencode"
 # Open client for Cisco AnyConnect VPN
 brew "openconnect"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Fast, disk space efficient package manager
+brew "pnpm"
 # Tool for managing OCI containers and pods
 brew "podman"
 # Alternative to docker-compose using podman
 brew "podman-compose"
 # Hook preloader
 brew "proxychains-ng"
+# Cross-platform application and UI framework
+brew "qt"
 # Rust toolchain installer
 brew "rustup"
+# Hunt down social media accounts by username
+brew "sherlock"
+# Acoustic spectrum analyser
+brew "spek"
 # Command-line tool to customize Spotify client
-brew "spicetify-cli"
+brew "spicetify-cli", link: false
+# Simple and fast anti-censorship tool written in Go
+brew "spoofdpi"
 # Scriptable music downloader for Qobuz, Tidal, SoundCloud, and Deezer
 brew "streamrip"
 # ISO/Edinburgh-style Prolog interpreter
@@ -46,11 +114,15 @@ brew "swi-prolog"
 # User interface to the TELNET protocol
 brew "telnet"
 # Anonymizing overlay network for TCP
-brew "tor"
+brew "tor", restart_service: :changed
+# Use SOCKS-friendly applications with Tor
+brew "torsocks"
 # Markup-based typesetting system
 brew "typst"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# JavaScript package manager
+brew "yarn"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Pluggable terminal workspace, with terminal multiplexer as the base feature
@@ -59,16 +131,32 @@ brew "zellij"
 brew "oven-sh/bun/bun"
 # iOS App Store alternative
 cask "altserver"
+# Android SDK component
+cask "android-platform-tools"
+# Tools for building Android applications
+cask "android-studio"
+# GUI inspector for mobile apps
+cask "appium-inspector"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
+# OpenAI's Codex desktop app for managing coding agents
+cask "codex-app"
 # Slicer and cloud services for some Creality FDM 3D printers
 cask "creality-print"
 # Write, edit, and chat about your code with AI
 cask "cursor"
+# Universal database tool and SQL client
+cask "dbeaver-community"
 # Voice and text chat software
 cask "discord"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
 # Online diagram software
 cask "drawio"
+# Monero desktop wallet
+cask "feather"
 # Collaborative team software
 cask "figma"
 # Web browser
@@ -77,16 +165,30 @@ cask "firefox"
 cask "ghostty"
 # Free and open-source image editor
 cask "gimp"
+# High speed downloader that supports all platforms
+cask "brewforge/extras/gopeed-app"
+# Platform for building proxies to bypass network restrictions
+cask "happ"
+# Chromium-based web browser
+cask "helium-browser"
 # Multi-Platform Auto-Proxy Client
 cask "brewforge/extras/hiddify"
 # Free and open-source media player
 cask "iina"
 # iPhone management application
 cask "imazing"
+# Sideloading application for iOS/tvOS
+cask "impactor"
+# Menu bar application for the IPFS peer-to-peer network
+cask "ipfs-desktop"
+# Media system
+cask "jellyfin"
 # File archiver
 cask "keka"
 # Utility to display the lid angle and play a creaking sound
 cask "lidanglesensor"
+# Open-source cross-platform alternative to AirDrop
+cask "localsend"
 # Mouse utility to add gesture functions and smooth scrolling to 3rd party mice
 cask "mac-mouse-fix@2"
 # Provides updates to various Microsoft products
@@ -97,16 +199,30 @@ cask "microsoft-excel"
 cask "microsoft-powerpoint"
 # Word processor
 cask "microsoft-word"
+# Untraceable cryptocurrency wallet
+cask "monero-wallet"
+# Tool to control external monitor brightness & volume
+cask "monitorcontrol"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Get up and running with large language models locally
+cask "ollama-app"
+# Simple Gtk# Paint Program
+cask "pinta"
+# Collaboration platform for API development
+cask "postman"
 # Minecraft launcher
 cask "prismlauncher"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Ebook reader
+cask "readest"
 # Open source virtual/remote desktop application
 cask "rustdesk"
+# Instant messaging application focusing on security
+cask "signal"
 # Music streaming service
 cask "spotify"
 # Video game digital distribution service
@@ -115,10 +231,14 @@ cask "steam"
 cask "supertuxkart"
 # Real time file synchronisation software
 cask "syncthing-app"
+# Mesh VPN based on WireGuard
+cask "tailscale-app"
 # Voice communication client
 cask "teamspeak-client"
 # Messaging app with a focus on speed and security
 cask "telegram"
+# JDK from the Eclipse Foundation (Adoptium)
+cask "temurin"
 # Web browser focusing on security
 cask "tor-browser"
 # Turn your MacBook's trackpad into a precise digital weighing scale
@@ -129,17 +249,35 @@ cask "transmission"
 cask "tunnelblick"
 # Google Chromium, sans integration with Google
 cask "ungoogled-chromium"
+# Management tool for Unity
+cask "unity-hub"
 # Virtual machines UI using QEMU
 cask "utm"
 # Open-source code editor
 cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
+# Tune in to Yandex Music and get personal recommendations
+cask "yandex-music"
+# Yandex video calls and meetings platform
+cask "yandextelemost"
+# Mesh VPN client
+cask "zerotier-one"
+# Video communication and virtual meeting platform
+cask "zoom"
+vscode "antfu.slidev"
 vscode "astro-build.astro-vscode"
 vscode "bradlc.vscode-tailwindcss"
 vscode "dbaeumer.vscode-eslint"
 vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
 vscode "foam.foam-vscode"
+vscode "github.vscode-github-actions"
+vscode "golang.go"
 vscode "jebbs.plantuml"
+vscode "jetbrains.kotlin-server"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
@@ -149,9 +287,15 @@ vscode "ms-toolsai.jupyter-keymap"
 vscode "ms-toolsai.jupyter-renderers"
 vscode "ms-toolsai.vscode-jupyter-cell-tags"
 vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vsliveshare.vsliveshare"
 vscode "myriad-dreamin.tinymist"
-vscode "rebornix.prolog"
+vscode "oven.bun-vscode"
 vscode "redhat.vscode-xml"
 vscode "ritwickdey.liveserver"
+vscode "rust-lang.rust-analyzer"
+vscode "shd101wyy.markdown-preview-enhanced"
 vscode "stylelint.vscode-stylelint"
+vscode "unifiedjs.vscode-mdx"
 vscode "yoavbls.pretty-ts-errors"
+go "github.com/go-delve/delve/cmd/dlv"
+go "golang.org/x/tools/gopls"

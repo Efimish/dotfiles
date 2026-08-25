@@ -1,0 +1,30 @@
+# brew install ffmpeg imagemagick pipx
+# pipx install "beets[fetchart,embedart,lyrics,lastgenre]"
+# beet import .local/share/nicotine/downloads
+directory: ~/Music/beets
+plugins:
+  - fuzzy
+  - info
+  - musicbrainz
+  - fetchart
+  # - embedart
+  - lyrics
+  - lastgenre
+  - replaygain
+fetchart:
+  high_resolution: yes
+  sources:
+    - coverart
+    - itunes
+    - amazon
+    - albumart
+    - cover_art_url
+    - filesystem
+# embedart:
+  # maxwidth: 1000
+lyrics:
+  sources:
+    - lrclib
+    # - genius
+replaygain:
+  backend: ffmpeg

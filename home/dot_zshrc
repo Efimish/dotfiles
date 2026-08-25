@@ -27,3 +27,6 @@ PROMPT='%F{blue}%~ %(?.%F{green}.%F{red})%#%f '
 
 # Shell integrations
 source <(fzf --zsh)
+
+# Hook direnv
+eval "$(direnv hook zsh)"
